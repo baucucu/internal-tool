@@ -12,7 +12,7 @@ export function LandingPageHeader() {
     <header className="w-full py-4 md:py-6">
       <div className="container flex items-center justify-between px-4 md:px-6">
         <div className="flex items-center space-x-4">
-          <Link className="flex items-center space-x-2" href="#">
+          <Link className="flex items-center space-x-2" href="/">
             <HomeIcon className="w-6 h-6" />
             <span className="font-bold">Home</span>
           </Link>
@@ -20,19 +20,19 @@ export function LandingPageHeader() {
         <nav className="hidden items-center gap-4 md:flex">
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#features"
+            href="/#features"
           >
             Features
           </Link>
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#pricing"
+            href="/#pricing"
           >
             Pricing
           </Link>
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#contact"
+            href="/contact"
           >
             Contact
           </Link>
