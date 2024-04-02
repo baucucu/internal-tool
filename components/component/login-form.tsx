@@ -55,7 +55,7 @@ export function LoginForm() {
           </Button>
         </div>
         <div className="mt-4 text-center text-sm">
-          (/* eslint-disable-next-line react/no-unescaped-entities */)
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <span className="mr-2 text-gray-500">Don't have an account?</span>
           <Link className="underline ml-1" href="/signup">
             Sign up
