@@ -1,32 +1,15 @@
-"use client";
+// landing page for the app
+// it has a navbar with icon on the left, navigation in the middle, and a mode toggle and get started on the right
+// it has a hero section with a title, description, and a button to get started on the left and an image on the right
+// it has a footer with a link to the privacy policy and a link to the terms of service on the left, and the navigation component in the middle
+import { LandingPageHeader } from "@/components/component/landing-page-header";
+import { HeroSection } from "@/components/component/hero-section";
 
-import { ModeToggle } from "@/components/mode-toggle";
-import { useChat } from "ai/react";
-
-export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
+export default function Home() {
   return (
-    <main className="flex items-center justify-center md:h-screen">
-      <div className="fixed top-2 right-2">
-        <ModeToggle />
-      </div>
-      <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
-        {messages.map((m) => (
-          <div key={m.id} className="whitespace-pre-wrap">
-            {m.role === "user" ? "User: " : "AI: "}
-            {m.content}
-          </div>
-        ))}
-
-        <form onSubmit={handleSubmit}>
-          <input
-            className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
-            value={input}
-            placeholder="Say something..."
-            onChange={handleInputChange}
-          />
-        </form>
-      </div>
+    <main>
+      <LandingPageHeader />
+      <HeroSection />
     </main>
   );
 }
