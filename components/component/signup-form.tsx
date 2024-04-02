@@ -58,8 +58,10 @@ export function SignupForm() {
           </Button>
         </div>
         <div className="mt-4 text-center text-sm">
-          Already have an account?
-          <Link className="underline ml-1" href="/login">
+          <span className="text-gray-500">
+            Already have an account?
+          </span>
+          <Link className="underline ml-2" href="/login">
             Sign in
           </Link>
         </div>

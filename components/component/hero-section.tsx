@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="w-full py-12 lg:py-16 xl:py-20">
+    <section className="w-full py-12 lg:py-16 xl:py-20" id="hero">
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_800px]">
           <div className="flex flex-col space-y-2">
@@ -21,12 +21,15 @@ export function HeroSection() {
                 experiences.
               </p>
             </div>
+            <div className="w-full max-w-full space-y-4 py-5">
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+              className="bg-primary text-background hover:bg-primary-foreground border border-primary hover:border-primary-foreground hover:text-primary hover:border-primary rounded-md px-5 py-2" 
               href="/login"
             >
               Get started
             </Link>
+
+            </div>
           </div>
           <Image
             src="/placeholder.svg"

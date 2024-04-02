@@ -20,26 +20,27 @@ export function LandingPageHeader() {
         <nav className="hidden items-center gap-4 md:flex">
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
+            href="#features"
           >
             Features
           </Link>
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
+            href="#pricing"
           >
             Pricing
           </Link>
           <Link
             className="flex items-center space-x-1.5 font-medium text-sm/relaxed transition-colors text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
+            href="#contact"
           >
             Contact
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
           <Link
-            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+            // className="inline-flex items-center justify-center rounded-md h-10 bg-green-600 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-green-800"
+            className="bg-primary text-background hover:bg-primary-foreground border border-primary hover:border-primary-foreground hover:text-primary hover:border-primary rounded-md px-5 py-2" 
             href="/login"
           >
             Get started
