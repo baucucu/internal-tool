@@ -5,6 +5,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../mode-toggle";
+import { JSX, SVGProps } from "react";
+import { JSX, SVGProps } from "react";
 
 export function LandingPageHeader() {
   return (
@@ -52,7 +54,7 @@ export function LandingPageHeader() {
   );
 }
 
-function HomeIcon(props) {
+function HomeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -72,7 +74,7 @@ function HomeIcon(props) {
   );
 }
 
-function MoonIcon(props) {
+function MoonIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
