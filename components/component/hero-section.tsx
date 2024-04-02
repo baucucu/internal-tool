@@ -22,13 +22,12 @@ export function HeroSection() {
               </p>
             </div>
             <div className="w-full max-w-full space-y-4 py-5">
-            <Link
-              className="bg-primary text-background hover:bg-primary-foreground border border-primary hover:border-primary-foreground hover:text-primary hover:border-primary rounded-md px-5 py-2" 
-              href="/login"
-            >
-              Get started
-            </Link>
-
+              <Link
+                className="bg-primary text-background hover:bg-primary-foreground border border-primary hover:text-primary rounded-md px-5 py-2" 
+                href="/login"
+              >
+                Get started
+              </Link>
             </div>
           </div>
           <Image
