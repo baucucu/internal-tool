@@ -4,12 +4,14 @@
 // it has a footer with a link to the privacy policy and a link to the terms of service on the left, and the navigation component in the middle
 import { LandingPageHeader } from "@/components/component/landing-page-header";
 import { HeroSection } from "@/components/component/hero-section";
+import { FeaturesSection } from "@/components/component/component/features-section";
 
 export default function Home() {
   return (
     <main>
       <LandingPageHeader />
       <HeroSection />
+      <FeaturesSection />
     </main>
   );
 }
