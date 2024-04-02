@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../mode-toggle";
 import { JSX, SVGProps } from "react";
-import { JSX, SVGProps } from "react";
 
 export function LandingPageHeader() {
   return (
